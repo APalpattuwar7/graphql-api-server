@@ -2,3 +2,6 @@
 *.targets
 *.cache
 *.json
+*.dll
+*.pdb
+*.g.cs
