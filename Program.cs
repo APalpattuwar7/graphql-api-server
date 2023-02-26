@@ -21,4 +21,8 @@ public class Query
     };
 
     public List<Book> GetBooks() => _books;
+
+    public Book GetBook(string title) => _books.FirstOrDefault(x => x.Title == title);
+
+    public Author GetAuthor(string name) => _books.Where(x => x.Author.Name == name).FirstOrDefault().Author;
 }
